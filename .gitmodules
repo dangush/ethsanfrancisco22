@@ -1,3 +1,6 @@
 [submodule "lib/decentralised-app"]
 	path = lib/decentralised-app
 	url = https://github.com/GetAlluo/decentralised-app
+[submodule "lib/liquidity-direction-protocol"]
+	path = lib/liquidity-direction-protocol
+	url = https://github.com/GetAlluo/liquidity-direction-protocol
