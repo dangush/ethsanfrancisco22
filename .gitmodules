@@ -10,3 +10,6 @@
 [submodule "lib/umaprotocol"]
 	path = lib/protocol
 	url = https://github.com/UMAprotocol/protocol
+[submodule "lib/forge-std"]
+	path = lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
