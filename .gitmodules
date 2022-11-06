@@ -7,3 +7,6 @@
 [submodule "lib/protocol-monorepo"]
 	path = lib/protocol-monorepo
 	url = https://github.com/superfluid-finance/protocol-monorepo
+[submodule "lib/protocol"]
+	path = lib/protocol
+	url = https://github.com/UMAprotocol/protocol
