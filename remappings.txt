@@ -1,0 +1,6 @@
+ds-test/=lib/protocol-monorepo/lib/forge-std/lib/ds-test/src/
+forge-std/=lib/protocol-monorepo/lib/forge-std/src/
+liquidity-direction-protocol/=lib/liquidity-direction-protocol/contracts/
+protocol-monorepo/=lib/protocol-monorepo/
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
