@@ -18,10 +18,7 @@ import {
     CFAv1Library
 } from "@superfluid-finance/ethereum-contracts/contracts/apps/CFAv1Library.sol";
 
-import {
-
-
-}
+import 'lib/protocol/packages/core/contracts/oracle/interfaces/OptimisticOracleV2Interface.sol';
 
 contract Vault {
     
@@ -111,6 +108,10 @@ contract HotPotato {
         startStream(address(this));
     }
 
+    function streamtest() public {
+
+    }
+
     // Submit a data request to the Optimistic oracle.
     //potato holder requests yes or no query "give hot potato to [target] player" then proposes yes
     function tossPotatoInitiate(address _target, bytes memory _targetString) public {
@@ -156,13 +157,15 @@ contract HotPotato {
 
         //[include logic here to send the target the hot potato] (in other words send the superfluid stream)
         //set new holder equal to target
+        uint256 target_id;
 
         for (uint256 i = 0; i < players.length; i++) {
             if (players[i] == target) {
                 holder = i;
+                target_id = i;
             }
         }
-        transferPotato(target);
+        transferPotato(target_id);
     }
 
     // Fetch the resolved price from the Optimistic Oracle that was settled.
@@ -170,7 +173,7 @@ contract HotPotato {
         return oo.getRequest(address(this), identifier, requestTime, ancillaryData).resolvedPrice;
     }
 
-    function transferPotato(address newHolder) public {
+    function transferPotato(uint256 newHolder) public {
         transferStream(newHolder);
     }
 
