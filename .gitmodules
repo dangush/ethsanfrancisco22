@@ -4,3 +4,6 @@
 [submodule "lib/liquidity-direction-protocol"]
 	path = lib/liquidity-direction-protocol
 	url = https://github.com/GetAlluo/liquidity-direction-protocol
+[submodule "lib/protocol-monorepo"]
+	path = lib/protocol-monorepo
+	url = https://github.com/superfluid-finance/protocol-monorepo
